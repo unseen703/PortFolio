@@ -43,6 +43,4 @@ Feel free to personalize your portfolio by modifying the following files:
 ## Showcase Your Talent
 This modern portfolio is designed to captivate and impress. Add your personal touch, showcase your skills, and let your achievements shine. Happy coding!
 
-Have questions or need assistance? Reach out to [your-email@example.com](mailto:your-email@example.com).
-
 Happy Showcasing! 🚀
