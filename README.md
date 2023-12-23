@@ -1,4 +1,4 @@
-# [Modern Portfolio](http://tinyurl.com/DipakDev)
+# [Modern Portfolio](https://dipak2dev.netlify.app/))
 
 Welcome to the Modern Portfolio Showcase, a sleek and dynamic way to exhibit your skills and accomplishments. Follow these simple steps to run the project on your local machine and bring your portfolio to life.
 
