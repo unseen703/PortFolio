@@ -13,14 +13,21 @@ import {
   mongodb,
   git,
   mysql,
-  php,
+  python,
+  pytorch,
+  numpy,
+  pandas,
+  scikitlearn,
+  jupyter,
   series9,
+  DK,
   ExpenseEasy,
   Planty,
   moviesHub,
   Portfolio,
-  knight,
-  Specialist
+  mlpCover,
+  vggCover,
+  transformerCover,
 } from "../assets";
 
 export const navLinks = [
@@ -40,43 +47,51 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Deep Learning Engineer",
     icon: web,
   },
   {
-    title: "Backend Developer",
+    title: "ML / Data Science Researcher",
+    icon: creator,
+  },
+  {
+    title: "Agentic AI Engineer",
+    icon: mobile,
+  },
+  {
+    title: "Full-Stack Developer",
     icon: backend,
-  },
-  {
-    title: "Knight on LeetCode",
-    icon: knight,
-  },
-  {
-    title: "Pupil on Codeforces",
-    icon: Specialist,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Python",
+    icon: python,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "PyTorch",
+    icon: pytorch,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "NumPy",
+    icon: numpy,
+  },
+  {
+    name: "Pandas",
+    icon: pandas,
+  },
+  {
+    name: "scikit-learn",
+    icon: scikitlearn,
+  },
+  {
+    name: "Jupyter",
+    icon: jupyter,
   },
   {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -91,119 +106,132 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "mysql",
+    name: "MySQL",
     icon: mysql,
   },
   {
-    name: "php",
-    icon: php,
+    name: "Git",
+    icon: git,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "Redux Toolkit",
+    icon: redux,
   },
 ];
 
 const experiences = [
   {
-    title: "PHP Developer",
+    title: "Data Science Research Scholar",
+    company_name: "IIT Madras",
+    icon: DK,
+    iconBg: "#ffffff",
+    date: "2024 - Present",
+    points: [
+      "Pursuing graduate research in data science with a focus on deep learning and computational biology.",
+      "Building graph- and transformer-based models for modeling biological systems, with end-to-end experiment tracking in Weights & Biases.",
+      "Implementing core deep learning components from scratch (MLPs, CNNs, attention) to ground research in first principles.",
+      "Developing agentic AI workflows to accelerate research and academic tasks.",
+    ],
+  },
+  {
+    title: "PHP / Web Developer",
     company_name: "9Series",
     icon: series9,
     iconBg: "#ffffff",
     date: "March 2020 - April 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with team to develop high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and maintained web applications using PHP, React.js and related technologies.",
+      "Collaborated with the team to deliver high-quality products on schedule.",
+      "Implemented responsive design and ensured cross-browser compatibility.",
+      "Participated in code reviews and provided constructive feedback to other developers.",
     ],
   },
 ];
 
 const projects = [
   {
+    name: "Neural Network from Scratch",
+    description:
+      "A modular, configurable Multi-Layer Perceptron built in pure NumPy for MNIST and Fashion-MNIST. Implements forward/backprop, six optimizers (SGD, Momentum, NAG, RMSProp, Adam, Nadam), multiple activations and weight inits, plus a 100+ config W&B hyperparameter sweep. Reaches ~98% test accuracy.",
+    tags: [
+      { name: "NumPy", color: "blue-text-gradient" },
+      { name: "MLP", color: "green-text-gradient" },
+      { name: "Backprop", color: "pink-text-gradient" },
+    ],
+    image: mlpCover,
+    source_code_link: "https://github.com/unseen703/da6401_assignment_1",
+  },
+  {
+    name: "Multi-Task Visual Perception",
+    description:
+      "A unified perception pipeline in PyTorch on the Oxford-IIIT Pet dataset using a VGG11 shared encoder with three task-specific heads: classification (37 breeds), bounding-box localization, and U-Net semantic segmentation. Features a custom dropout, a numerically stable IoU loss, and full W&B tracking.",
+    tags: [
+      { name: "PyTorch", color: "blue-text-gradient" },
+      { name: "VGG11", color: "green-text-gradient" },
+      { name: "U-Net", color: "pink-text-gradient" },
+    ],
+    image: vggCover,
+    source_code_link: "https://github.com/unseen703/da6401_assignment_2",
+  },
+  {
+    name: "Transformer for Translation",
+    description:
+      "A from-scratch implementation of the 'Attention Is All You Need' Transformer for German-to-English translation on Multi30k. Includes multi-head scaled dot-product attention, Noam learning-rate scheduling, label smoothing, BLEU evaluation, and five ablation studies (scaling factor, positional encodings, label smoothing, attention rollout).",
+    tags: [
+      { name: "PyTorch", color: "blue-text-gradient" },
+      { name: "Transformer", color: "green-text-gradient" },
+      { name: "Attention", color: "pink-text-gradient" },
+    ],
+    image: transformerCover,
+    source_code_link: "https://github.com/unseen703/da6401_assignment_3",
+  },
+  {
     name: "Planty",
     description:
-      "A web-based social media application that enables users to post photos, with additional features for commenting and liking posts. This project showcases my ability to write clean and productive code, utilize various libraries to create responsive user interfaces, and develop fully functional RESTful APIs.",
+      "A web-based social application that lets users post photos, comment, and like posts. Demonstrates clean, productive code, responsive UI, and fully functional RESTful APIs.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongoDB",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Node",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "mongoDB", color: "green-text-gradient" },
+      { name: "Node", color: "pink-text-gradient" },
     ],
     image: Planty,
     source_code_link: "https://github.com/unseen703/Planty",
   },
   {
-    name: "Portfolio",
+    name: "Expense Easy",
     description:
-      "An interactive Modern UI website using React, and Three.js, leveraging the capabilities of Three.js to incorporate 3D visuals. Staying up-to-date with the trends of modern UI designs.",
+      "A web app to record daily expenses and incomes with voice-based input and graphical representation of transactions, helping users track and visualize their spending.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "ThreeJs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "Reactjs", color: "blue-text-gradient" },
+      { name: "supabase", color: "green-text-gradient" },
+      { name: "css", color: "pink-text-gradient" },
     ],
-    image: Portfolio,
-    source_code_link: "https://github.com/",
+    image: ExpenseEasy,
+    source_code_link: "https://github.com/unseen703/BudgetTracker",
   },
   {
     name: "MoviesMania",
     description:
-      "A Movies Exploration platform that enables users to discover trending shows and TV series. Users can effortlessly fetch and search for their favorite shows and genres.",
+      "A movie exploration platform to discover trending shows and TV series, with effortless search across favorite shows and genres.",
     tags: [
-      {
-        name: "Reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Material-UI",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "Reactjs", color: "blue-text-gradient" },
+      { name: "Material-UI", color: "green-text-gradient" },
+      { name: "css", color: "pink-text-gradient" },
     ],
     image: moviesHub,
     source_code_link: "https://github.com/unseen703/MoviesHUB",
-  },
-  {
-    name: "Expense Easy",
-    description:
-      "It's a web application tool that allows users to record daily expenses and incomes. It can takes voice-based inputs from user. And provides graphical representation of their Transactions.",
-    tags: [
-      {
-        name: "Reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: ExpenseEasy,
-    source_code_link: "https://github.com/unseen703/BudgetTracker",
   },
 ];
 

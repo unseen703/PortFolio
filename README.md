@@ -1,46 +1,72 @@
-# [Modern Portfolio](https://dipak2dev.netlify.app/)
+# Dipak Kanzariya — Portfolio
 
-Welcome to the Modern Portfolio Showcase, a sleek and dynamic way to exhibit your skills and accomplishments. Follow these simple steps to run the project on your local machine and bring your portfolio to life.
+A modern, animated portfolio built with **React, Vite, Tailwind CSS, Framer Motion, and Three.js**, showcasing my work in **deep learning, data science, and full-stack engineering**.
+
+🔗 **Live:** https://dipak2dev.netlify.app
+
+---
+
+## Featured Projects
+
+| Project | What it is | Stack | Repo |
+|---|---|---|---|
+| **Neural Network from Scratch** | Configurable MLP in pure NumPy for MNIST / Fashion-MNIST — backprop, 6 optimizers, 100+ config W&B sweep (~98% acc) | NumPy | [da6401_assignment_1](https://github.com/unseen703/da6401_assignment_1) |
+| **Multi-Task Visual Perception** | VGG11 shared encoder with classification, localization, and U-Net segmentation heads on Oxford-IIIT Pet | PyTorch | [da6401_assignment_2](https://github.com/unseen703/da6401_assignment_2) |
+| **Transformer for Translation** | "Attention Is All You Need" implemented from scratch for DE→EN on Multi30k, with Noam scheduling, label smoothing & 5 ablations | PyTorch | [da6401_assignment_3](https://github.com/unseen703/da6401_assignment_3) |
+| **Planty** | Photo-sharing social app with REST APIs | React · Node · MongoDB | [Planty](https://github.com/unseen703/Planty) |
+| **Expense Easy** | Expense tracker with voice input & charts | React · Supabase | [BudgetTracker](https://github.com/unseen703/BudgetTracker) |
+| **MoviesMania** | Trending movie/TV discovery platform | React · Material-UI | [MoviesHUB](https://github.com/unseen703/MoviesHUB) |
+
+---
 
 ## Getting Started
 
-### Step 1: Clone the Project
-Open your terminal and run the following command to clone the project repository:
-
+### 1. Clone
 ```bash
 git clone https://github.com/unseen703/PortFolio.git
+cd PortFolio
 ```
 
-### Step 2: Install Dependencies
-Navigate to the project directory and install all the necessary dependencies:
-
+### 2. Install dependencies
 ```bash
-cd PortFolio
 npm install
 ```
 
-### Step 3: Run the App
-Once the installation is complete, launch the app with the following command:
-
+### 3. Run locally
 ```bash
 npm run dev
 ```
 
-## Explore and Customize
+### 4. Build for production
+```bash
+npm run build
+```
 
-### Project Structure
-- **`src`**: Contains the source code for the portfolio.
-- **`public`**: Houses static assets such as images, fonts, and other resources.
-- **`styles`**: Includes styling files for enhancing the visual appeal.
+---
 
-### Customization
-Feel free to personalize your portfolio by modifying the following files:
-- **`src/components`**: Update the content and structure of individual components.
-- **`src/assets`** & **`src/constants`**: Update the images and content of these folders to personalize the portfolio.
-- **`src/components/contact.jsx`**: Replace credentials with your EmailJs credentials.
-- Play around with Framer Motion and React-Three to create captivating 3D visuals.
+## Project Structure
 
-## Showcase Your Talent
-This modern portfolio is designed to captivate and impress. Add your personal touch, showcase your skills, and let your achievements shine. Happy coding!
+- **`src/components`** — section components (Hero, About, Experience, Works, Tech, Contact).
+- **`src/constants/index.js`** — all editable content: services, technologies, experiences, and projects.
+- **`src/assets`** — images, tech icons, and project covers.
+- **`src/assets/index.js`** — central asset imports.
 
-Happy Showcasing! 🚀
+### Customizing content
+
+Most updates only require editing **`src/constants/index.js`**:
+- Add a project to the `projects` array (with a cover image imported in `src/assets/index.js`).
+- Add a role to `experiences`.
+- Add a tool to `technologies`.
+
+### Contact form
+
+`src/components/Contact.jsx` uses EmailJS. Set these in a `.env` file:
+```
+VITE_APP_EMAILJS_SERVICE_ID=...
+VITE_APP_EMAILJS_TEMPLATE_ID=...
+VITE_APP_EMAILJS_PUBLIC_KEY=...
+```
+
+---
+
+Built and maintained by **Dipak Kanzariya**.

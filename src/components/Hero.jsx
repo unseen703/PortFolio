@@ -31,7 +31,7 @@ const Hero = () => {
             className={`${styles.heroHeadText} text-white`}
             variants={textVariants}
           >
-            Hi, I'm
+            Hi, I'm{" "}
             <motion.span className="text-[#3c3ac5]" variants={textVariants}>
               Dipak
             </motion.span>
@@ -40,9 +40,8 @@ const Hero = () => {
             className={`${styles.heroSubText} mt-2 text-white-100`}
             variants={textVariants}
           >
-            I develop  user{" "}interfaces and full stack web applications.
-            {/* <motion.br className="sm:block hidden" variants={textVariants} />{" "} */}
-            
+            I build deep learning models and data-driven systems, from neural
+            nets coded by hand to full-stack applications.
           </motion.p>
         </motion.div>
       </div>

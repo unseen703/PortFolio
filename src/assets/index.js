@@ -7,6 +7,15 @@ import github from "./github.png";
 import knight from './Knight 1.webp'
 import Specialist from './download 1.webp'
 
+// Data science / ML stack
+import python from "./tech/python.svg";
+import pytorch from "./tech/pytorch.svg";
+import numpy from "./tech/numpy.svg";
+import pandas from "./tech/pandas.svg";
+import scikitlearn from "./tech/scikitlearn.svg";
+import jupyter from "./tech/jupyter.svg";
+
+// Web stack
 import css from "./tech/css.png";
 import php from "./tech/php.svg";
 import mysql from "./tech/mysql.svg";
@@ -21,6 +30,11 @@ import tailwind from "./tech/tailwind.png";
 
 import series9 from "./company/logo.svg";
 
+// Project covers
+import mlpCover from "./mlp_cover.svg";
+import vggCover from "./vgg_cover.svg";
+import transformerCover from "./transformer_cover.svg";
+
 import Planty from "./Planty.webp";
 import moviesHub from "./moviesHub.webp";
 import ExpenseEasy from "./ExpenseEasy.webp";
@@ -33,6 +47,12 @@ export {
   mobile,
   web,
   github,
+  python,
+  pytorch,
+  numpy,
+  pandas,
+  scikitlearn,
+  jupyter,
   css,
   mysql,
   php,
@@ -45,6 +65,9 @@ export {
   redux,
   tailwind,
   series9,
+  mlpCover,
+  vggCover,
+  transformerCover,
   Portfolio,
   Planty,
   moviesHub,
